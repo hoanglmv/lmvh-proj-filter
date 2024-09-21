@@ -2,8 +2,8 @@ import os
 import shutil
 
 # Đường dẫn folder gốc và folder đích
-source_folder = 'src\data\ibug_300W_large_face_landmark_dataset\helen/trainset'  # Đường dẫn tới folder 'train' của bạn
-destination_folder = 'src\data\dataset_no_mirror'  # Đường dẫn tới folder đích
+source_folder = 'D:\lmvh\lmvh-proj-filter\src\data\helen\\trainset'  # Đường dẫn tới folder 'train' của bạn
+destination_folder = 'D:\lmvh\lmvh-proj-filter\src\data\helen_no_mirror'  # Đường dẫn tới folder đích
 
 # Tạo folder đích nếu chưa tồn tại
 if not os.path.exists(destination_folder):

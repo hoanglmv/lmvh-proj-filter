@@ -2,15 +2,15 @@ import os
 import cv2
 
 # Đường dẫn tới folder chứa ảnh và keypoint
-destination_folder = 'src\data\dataset_no_mirror'  # Thay bằng folder đích của bạn
-output_folder = 'src\data\dataresized'  # Đường dẫn tới folder lưu ảnh và tọa độ đã được resize
+destination_folder = 'src/data/dataresized'  # Thay bằng folder đích của bạn
+output_folder = 'src\data\data224x224'  # Đường dẫn tới folder lưu ảnh và tọa độ đã được resize
 
 # Tạo folder mới nếu chưa tồn tại
 if not os.path.exists(output_folder):
     os.makedirs(output_folder)
 
 # Kích thước đích (256x256)
-target_size = (256, 256)
+target_size = (224, 224)
 
 # Hàm để đọc tọa độ keypoints từ file .pts
 def read_keypoints(pts_file):
